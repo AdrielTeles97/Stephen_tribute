@@ -1,0 +1,127 @@
+@charset "UTF-8";
+/*Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Nixie+One&display=swap');
+
+/*RESET*/
+ * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;   
+}
+/*CSS VAR UX*/
+:root {
+    --font-titulos: 'Libre Baskerville', serif;
+    --font-paragrafos: 'Nixie One', cursive;
+    --cor1: #595859;
+    --cor2: #0D0126;
+    --cor3: #BEBDBF;
+    --cor4: #F2F2F2;
+    --cor5: #0D0D0D;
+}
+
+
+.paralax {
+    display: flex;
+    background: linear-gradient(120deg, #5958595d, #0d0126e5), url('../images/bg.jpg'); 
+    min-height: 400px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header .name {
+    font-family: var(--font-titulos);
+    font-size: 35px;
+    font-weight: normal;
+    text-align: center;
+    color: #fff;
+    padding-top: 20px;
+    background: linear-gradient(to right, #59585967, #0d0126d3);
+}
+
+header p {
+    text-align: center;
+    font-family: var(--font-paragrafos);
+    padding: 10px;
+    background: linear-gradient(to right, #59585967, #0d0126d3);
+    color: rgb(255, 255, 255);
+    padding-bottom: 20px;
+}
+
+.img_stephen {
+    display: flex;
+}
+
+.img_stephen img {
+    width: 350px;
+
+}
+
+.text_stephen {
+    margin: auto;
+    line-height: 32px; 
+    font-family: var(--font-paragrafos);
+    font-size: 20px;
+    color: #fff;
+    padding: 22px;
+}
+
+.year {
+    margin: auto;
+    margin-top: 30px;
+    color: #fff;
+    text-align: center;
+}
+
+.signature img {
+    display: flex;
+    margin: auto;
+    margin-top: 45px;
+    width: 220px;
+}
+
+.container {
+    margin: auto;
+    margin-top: 20px;
+    width: 65%;
+    text-align: center;
+    background-color: var(--cor4);
+    border-radius: 4px;
+}
+
+.history h1 {
+    padding: 20px;
+    font-family: var(--font-titulos);
+    font-weight: bold;
+}
+
+.history h3 {
+    font-family: var(--font-paragrafos);
+    text-align: left;
+    padding: 20px;
+}
+
+.history p {
+    font-family: var(--font-paragrafos);
+    font-size: 17px;
+    line-height: 28px;
+    text-indent: 35px;
+    text-align: justify;
+    color: #000;
+    padding: 20px;
+}
+
+footer p {
+    background-color: var(--cor3);
+    margin-top: 40px;
+    padding: 35px;
+    font-family: var(--font-paragrafos);
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+}
+
